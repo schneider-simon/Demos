@@ -125,4 +125,23 @@ section.header{
     .project.half{
         width: auto;
     }
+
+    .filter li{
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
+
+        background-color: #f9f9f9;
+
+        transition: ease all 1s;
+        font-weight: bold;
+
+        margin-bottom: 1px;
+        border-bottom: 3px solid transparent;
+    }
+
+    .filter li.active{
+        border-bottom-color: #dddddd;
+
+    }
 }

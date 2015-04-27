@@ -13,6 +13,8 @@ jQuery(document).ready(function ($) {
 
     //Smooth anchor scrolling
     $('a').click(function(){
+        if($.attr(this, 'href').indexOf('#') === -1) return true;
+
         $('html, body').animate({
             scrollTop: $( $.attr(this, 'href') ).offset().top
         }, 1000);

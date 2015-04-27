@@ -23,7 +23,7 @@ include('view_helper.php');
     <section id="content" class="content oversize">
         <div id="filter" class="container filter">
             <div class="col-xs-6 col-md-offset-8 col-md-2 subfilter-service">
-                <h3>Leistungen</h3>
+                <h3>Leistungen <i class="fa fa-angle-down"></i></h3>
                 <ul class="list-unstyled">
                     <li data-filter="website">Website</li>
                     <li data-filter="service">Print</li>
@@ -33,7 +33,7 @@ include('view_helper.php');
 
             </div>
             <div class="col-xs-6 col-md-2 subfilter-sector">
-                <h3>Branche</h3>
+                <h3>Branche <i class="fa fa-angle-down"></i></h3>
                 <ul class="list-unstyled">
                     <li data-filter="metal">Metall</li>
                     <li data-filter="design">Design</li>
@@ -63,7 +63,7 @@ include('view_helper.php');
                         </div>
                     </div>
                 </div>
-                <div class="project half movie metal">
+                <div class="project half metal">
                     <div class="inner">
                         <img width="1920" height="1080" src="assets/img/test/mountains_2.jpg"/>
 
@@ -101,6 +101,25 @@ include('view_helper.php');
                         </div>
                     </div>
                 </div>
+                <div class="project half movie">
+                    <div class="inner">
+                        <img width="1920" height="1080" src="assets/img/test/mountains_1.jpg"/>
+
+                        <div class="overlay">
+                            <h3>Diodea</h3>
+
+                            <div class="details">
+                                <a href="creation_sub.php" class="project-link"></a>
+                                <ul class="list-unstyled">
+                                    <li>Strategisches Marketing</li>
+                                    <li>Logo Redesign</li>
+                                    <li>Fotokonzept und Shooting</li>
+                                    <li>Konzeption, Design und Programmierung von Vier Websites</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 </div>
@@ -110,6 +129,7 @@ include('view_helper.php');
 
 <?php partial('footer'); ?>
 <script src="assets/lib/isotope.pkgd.min.js"></script>
+<script src="assets/lib/isotope.masonry-horizontal.js"></script>
 <script src="assets/js/zwei14.page-creation.js"></script>
 
 <script>

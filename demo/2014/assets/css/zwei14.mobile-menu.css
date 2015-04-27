@@ -34,10 +34,21 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    transition:  ease all 5s;
 }
 
 .zwei14-mobilemenu-links span{
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+
+    display: block;
+    height: 0;
+    width: 0;
+
+    text-align: center;
+    font-weight: 300;
+    font-size: 11px;
+    transition:  ease all 5s;
 }
 
 .zwei14-mobilemenu-links i.icon-home{
@@ -62,4 +73,66 @@
 
 .zwei14-mobilemenu-links li{
     padding: 0px;
+}
+
+.zwei14-mobilemenu .inner{
+
+}
+
+.zwei14-mobilemenu.poppedup .inner{
+    position: fixed;
+    padding: 10px;
+    z-index: 999;
+}
+
+.zwei14-mobilemenu.poppedup .zwei14-mobilemenu-links{
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+}
+
+.zwei14-mobilemenu.poppedup .zwei14-mobilemenu-links li{
+    margin-right: 5px;
+}
+
+.zwei14-mobilemenu.poppedup .zwei14-mobilemenu-links i {
+    height: 28px;
+    width: auto;
+    margin-bottom: 5px;
+    display: block;
+    margin-right: 0px;
+}
+
+.zwei14-mobilemenu.poppedup .zwei14-mobilemenu-links span{
+    visibility: visible;
+    opacity: 1;
+
+    height: auto;
+    width: auto;
+
+
+}
+
+#zwei14-mobilemenu-overlay{
+    visibility: hidden;
+    opacity: 0.0;
+
+    transition: ease all 1s;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #000000;
+    z-index: 998;
+}
+
+.zwei14-mobile-menu-poppedup #zwei14-mobilemenu-overlay{
+
+    visibility: visible;
+    opacity: 0.8;
+
+
+
+
 }

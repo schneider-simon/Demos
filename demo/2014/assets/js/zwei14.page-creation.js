@@ -1,5 +1,6 @@
 zwei14.loadedProjectImages = 0;
 
+zwei14.projectImages;
 
 zwei14.projects = function(){
     console.log('load projects');
@@ -9,18 +10,15 @@ zwei14.projects = function(){
     var gutterWidth = 5;
 
     var $images = $container.find('img');
+    zwei14.projectImages = $images;
 
     $images.load(function(){
-        zwei14.loadedProjectImages++;
-
-        if (zwei14.loadedProjectImages == $images.length) {
-            imagesLoaded();
-        }
+        zwei14.projectImageLoaded();
     });
 
-    function imagesLoaded(){
-        zwei14.projectsResize();
-    }
+    $images.each(function(){
+        if(this.complete) zwei14.projectImageLoaded();
+    });
 
     $('#filter li').addClass('active');
 
@@ -43,6 +41,13 @@ zwei14.projects = function(){
 
 }
 
+zwei14.projectImageLoaded = function(){
+    zwei14.loadedProjectImages++;
+
+    if (zwei14.loadedProjectImages == zwei14.projectImages.length) {
+        zwei14.projectsResize();
+    }
+};
 
 
 zwei14.projectsResize = function(){
@@ -66,6 +71,7 @@ zwei14.projectsResize = function(){
 
     $container.isotope({
         itemSelector: '.project',
+        layoutMode: 'packery',
         masonry: {
             columnWidth: ($container.width() / 2)
         }
