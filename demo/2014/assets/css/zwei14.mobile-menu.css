@@ -1,0 +1,65 @@
+.zwei14-mobilemenu-links{
+    padding-left: 0;
+    list-style: none;
+}
+
+.zwei14-mobilemenu-links a{
+    padding-top: 13px;
+    padding-right: 3px;
+    padding-left: 3px;
+    opacity: 0.5;
+}
+
+.zwei14-mobilemenu-links li:last-child a{
+    padding-right: 0px;
+}
+
+.zwei14-mobilemenu-links li:first-child a{
+    padding-left: 0px;
+}
+
+.zwei14-mobilemenu-links a:focus,
+.zwei14-mobilemenu-links a:hover,
+.zwei14-mobilemenu-links a.active{
+    opacity: 1.0;
+}
+
+.zwei14-mobilemenu-links i{
+    height: 22px;
+    width: 22px;
+    display: inline-block;
+
+    margin-right: 2px;
+    background: url('../img/icons/icon-home.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.zwei14-mobilemenu-links span{
+    display: none;
+}
+
+.zwei14-mobilemenu-links i.icon-home{
+    background-image: url('../img/icons/icon-globe.png');
+}
+
+.zwei14-mobilemenu-links i.icon-agency{
+    background-image: url('../img/icons/icon-store.png');
+}
+
+.zwei14-mobilemenu-links i.icon-projects{
+    background-image: url('../img/icons/icon-ruler.png');
+}
+
+.zwei14-mobilemenu-links i.icon-contact{
+    background-image: url('../img/icons/icon-comments.png');
+}
+
+.zwei14-mobilemenu-links i.icon-news{
+    background-image: url('../img/icons/icon-bookmark.png');
+}
+
+.zwei14-mobilemenu-links li{
+    padding: 0px;
+}

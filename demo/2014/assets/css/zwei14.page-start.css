@@ -1,0 +1,338 @@
+/*
+|--------------------------------------------------------------------------
+| Start Page (you may want to call it index)
+|--------------------------------------------------------------------------
+*/
+
+#myCanvas{
+    display: block;
+    margin: 0px auto;
+}
+
+.canvas-wrap {
+    padding-top: 30px;
+    min-height: 100%;
+    height: 100%;
+    overflow: visible;
+}.canvas-wrap {
+     padding-top: 30px;
+     min-height: 100%;
+     height: 100%;
+     overflow: visible;
+ }
+
+.page-start .header-overlay .header-overlay-inner{
+    text-align: center;
+}
+
+.page-start .header-overlay .header-overlay-inner>div{
+    text-align: center;
+
+}
+
+.page-start .header-overlay .super-text-slogan{
+    font-size: 22px;
+}
+
+
+.page-start .header-overlay{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    z-index: 2;
+    color: #000000;
+
+    overflow: hidden;
+}
+
+.page-start h1.page-title{
+    font-size: 150px;
+    margin-top: 0px;
+    font-size: 100px;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+
+
+.page-start .header-overlay .header-overlay-inner{
+    top: 35%;
+    position: relative;
+}
+
+
+
+.page-start .header-overlay-sliderControl{
+    position: relative;
+}
+
+.page-start .header-overlay-sliderControl .left,
+.page-start .header-overlay-sliderControl .right{
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 64px;
+
+    margin-left: -20%;
+    margin-top: -32px;
+
+    cursor: pointer;
+}
+
+.page-start .header-overlay-sliderControl .left{
+    left: 30%;
+}
+
+.page-start .header-overlay-sliderControl .right {
+    right: 10%;
+}
+.page-start .header-overlay-sliderControl .right .icon-arrowRight,
+.page-start .header-overlay-sliderControl .left .icon-arrowLeft {
+	font-size: 320%;
+}
+.page-start .header-overlay .scrollDown-wrap .scrollDown {
+	font-size: 800%;
+}
+
+.page-start .header-overlay .scrollDown{
+    cursor: pointer;
+    transition: ease opacity 0.5s;
+}
+
+.page-start .header-overlay .scrollDown:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.page-start .header-overlay-sliderControl .counter{
+    position: absolute;
+    width: 75px;
+    height: 60px;
+    left: 50%;
+    margin-left: -50px;
+    top: -40%;
+}
+
+.page-start .header-overlay-sliderControl .counter .index{
+    font-size: 45px;
+    position: relative;
+    top: -18px;
+    margin-right: 5px;
+    display: inline-block;
+    font-weight: 300;
+}
+
+.page-start .header-overlay-sliderControl .counter .seperator{
+    height: 50px;
+    display: inline-block;
+    border-right: 1px solid #000;
+}
+
+.page-start .header-overlay-sliderControl .counter .total{
+    margin-left: 6px;
+    top: -8px;
+    position: relative;
+}
+
+.page-start .header-overlay-sliderControl {
+    height: 70px;
+}
+
+.page-start .header-overlay .scrollDown-wrap{
+    position: absolute;
+    right: 50%;
+    bottom: 10%;
+
+    width: 64px;
+    height: 100px;
+
+}
+
+.page-start .header-overlay .scrollDown-wrap .scrollDown{
+    height: 100%;
+    width: 100%;
+    display: block;
+
+    z-index: 2;
+    position: relative;
+}
+
+.page-start .scrollDown-wrap .expandingDot{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: 54px;
+    /* left: 43px; */
+    left: 59px;
+    /* background-color: #FFCA00; */
+    background-color: #000;
+    opacity: 1.0;
+    border-radius: 5000000px;
+    transition: none;
+
+    z-index: 1;
+
+
+}
+
+.page-start .scrollDown-wrap .expandingDot.expanded{
+    width: 300px;
+    height: 300px;
+    margin-left: -150px;
+    margin-top: -150px;
+
+    opacity: 0.0;
+
+    transition: ease-out all 1.0s;
+
+
+}
+
+
+.zwei14-picture-slides{
+    background-color: #222;
+    position: relative;
+}
+
+.zwei14-picture-slides .picture-slide{
+    display: none;
+    min-height: 70vh;
+
+}
+
+.zwei14-picture-slides .picture-slide.active{
+    display: block;
+    position: relative;
+}
+
+.zwei14-picture-slides-text{
+    display: inline-block;
+    min-width: 300px;
+}
+
+.zwei14-picture-slides-overlay .zwei14-controls{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 270px;
+    height: 100px;
+}
+
+.zwei14-picture-slides-overlay .zwei14-controls .zwei14-picture-slides-control{
+    float: left;
+    cursor: pointer;
+    width: 100px;
+    height: 64px;
+    margin-top: 41px;
+}
+
+.zwei14-picture-slides-overlay .zwei14-controls .zwei14-picture-slides-control.left{
+    background-image: url('../img/arrows/left_white.png');
+
+}
+
+.zwei14-picture-slides-overlay .zwei14-controls .zwei14-picture-slides-control.right{
+    background-image: url('../img/arrows/right_white.png');
+
+}
+
+.zwei14-picture-slides-overlay .zwei14-controls .zwei14-picture-slides-control.scrollTop{
+    background-image: url('../img/arrows/up_white.png');
+    width: 65px;
+    height: 100px;
+    margin-top: 0px;
+
+}
+
+.zwei14-picture-slides-overlay .zwei14-text {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: #fff;
+    font-weight: 100;
+    font-size: 16px;
+    text-shadow: 1px 1px 5px #000;
+}
+
+/**
+*   Small devices
+*/
+@media (max-width: 768px) {
+    .page-start .header-overlay .header-overlay-inner{
+        top: 25%;
+    }
+
+    .page-start .header-overlay-sliderControl .left,
+    .page-start .header-overlay-sliderControl .right{
+        width: 50px;
+        height: 32px;
+        top: 20px;
+        margin-left: -25px;
+        margin-top: -16px;
+        background-size: cover;
+    }
+
+    .page-start .header-overlay-sliderControl .counter .index{
+        font-size: 35px;
+        top: -30px;
+    }
+
+    .zwei14-picture-slides-overlay .zwei14-controls{
+        right: 50%;
+        margin-right: -68px;
+        width: 135px;
+    }
+
+    .zwei14-picture-slides-overlay .zwei14-controls .zwei14-picture-slides-control.left,
+    .zwei14-picture-slides-overlay .zwei14-controls .zwei14-picture-slides-control.right{
+        width: 50px;
+        height: 32px;
+        background-size: cover;
+
+    }
+
+    .zwei14-picture-slides-overlay .zwei14-controls .zwei14-picture-slides-control.scrollTop{
+        width: 32px;
+        height: 50px;
+        background-size: cover;
+
+    }
+}
+
+/*
+|--------------------------------------------------------------------------
+| Medium devices (sm and xs)
+|--------------------------------------------------------------------------
+*/
+@media (max-width: 992px) {
+    .page-start h1.page-title {
+        font-size: 70px;
+    }
+}
+
+/*
+|--------------------------------------------------------------------------
+| Small devices
+|--------------------------------------------------------------------------
+*/
+@media (max-width: 768px) {
+
+    .page-start h1.page-title {
+        font-size: 40px;
+    }
+
+
+    .page-start .header-overlay-sliderControl .left {
+        left: 35px;
+    }
+
+    .page-start .header-overlay-sliderControl .right {
+        right: 35px;
+    }
+
+    .page-start .header-overlay .scrollDown-wrap {
+        bottom: 15%;
+    }
+}

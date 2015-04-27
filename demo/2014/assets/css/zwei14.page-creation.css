@@ -1,0 +1,128 @@
+section.header{
+    margin-bottom: 150px;
+}
+
+.projects{
+    opacity: 0;
+
+}
+
+.project{
+    position: relative;
+    cursor: pointer;
+}
+
+.project .overlay{
+    top: 0;
+    left: 0;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+}
+
+.project .overlay{
+    text-align: center;
+    font-size: 18px;
+}
+
+.project .overlay,
+.project .overlay a{
+    color: #ffffff;
+}
+
+.project .overlay h3{
+    margin-top: 20%;
+    font-size: 48px;
+    font-weight: bold;
+    transition-delay: 0.5s;
+}
+
+.project .overlay:hover{
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+.project .overlay a.project-link{
+    opacity: 0;
+    margin-left: -100px;
+
+    background-image: url('../img/arrows/right_white.png');
+
+    height: 32px;
+    width: 50px;
+
+    background-size: contain;
+    display: inline-block;
+}
+
+.project .overlay:hover h3 {
+    margin-top: 10%;
+}
+
+.project .overlay .details{
+    text-transform: uppercase;
+    opacity: 0.0;
+    transition-delay: 0s;
+}
+
+.project .overlay ul{
+    padding-left: 0;
+    list-style: none;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+
+.project .overlay:hover .details{
+    opacity: 1.0;
+    transition-delay: 0.5s;
+}
+.project .overlay:hover .details a.project-link{
+    opacity: 1.0;
+    transition-delay: 1.0s;
+    margin-left: 0px;
+}
+
+
+
+.project .overlay h3,
+.project .overlay,
+.project .overlay .details,
+.project .overlay a.project-link{
+    transition: ease all 0.5s;
+}
+
+.project img{
+    height: auto;
+}
+
+.project.half{
+    width: 50%;
+}
+
+.project .inner{
+    padding: 0px 2px 2px 0px;
+}
+
+.filter{
+    margin-bottom: 20px;
+}
+
+.filter li{
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.filter li.active{
+    font-weight: bold;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Medium devices (sm and xs)
+|--------------------------------------------------------------------------
+*/
+@media (max-width: 992px) {
+    .project.half{
+        width: auto;
+    }
+}

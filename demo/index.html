@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Schneider Click demo</title>
+        <link href="../assets/css/bootstrap.css"  rel="stylesheet" type="text/css"/>
+
+        <script src="../assets/js/paperjs/dist/paper-full.js"></script>
+        <script>
+            var paperscriptApp = {};
+        </script>
+        <script type="text/paperscript" src="paperscript_demo.js" canvas="myCanvas"></script>
+        <style>
+            #myCanvas{
+                margin: 0 auto;
+                display: block;;
+            }
+
+            #logo{
+                background-image: url('../assets/img/LogoWhiteTransparent.png');
+                width: 200px;
+                height: 200px;
+                background-repeat: no-repeat;
+                background-size: 200px;
+                position: absolute;
+                margin: 0 auto;
+                left: 50%;
+                margin-left: -100px;
+                top: 259px;
+            }
+        </style>
+    </head>
+    <body style="background-color: #333">
+        <div class="container">
+            <br/>
+            <br/>
+            <div class="text-align: center; position: relative;">
+            <div id="logo"></div>
+            <canvas id="myCanvas" width="500" height="500" style="background-color: #333;"></canvas>
+                </div>
+            </div>
+
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script>
+            $('body').click(function(){
+               console.log('jquery click');
+                //console.log(paperscript);
+                console.log(paperscriptApp);
+            });
+        </script>
+
+        </body>
+</html>

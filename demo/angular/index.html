@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+
+<div class="container" data-ng-controller="TestController">
+    <input ng-enter="addUser()" ng-model="name"/>
+    <button ng-click="addUser()">Add</button>
+    <br/>
+    <ul>
+        <li ng-repeat="user in users | filter:name | orderBy:name">{{ user }}</li>
+    </ul>
+</div>
+
+
+<script src="angular.js"></script>
+<script>
+    var app = angular.module('myApp', []);
+
+    app.controller('TestController',
+            function ($scope) {
+                $scope.users = [
+                        "Philipp", "Simon", "Marc"
+                ];
+
+                $scope.addUser = function(){
+                    $scope.users.push($scope.name);
+                    $scope.name = "";
+                }
+
+            });
+
+    app.directive('ngEnter', function () {
+        return function (scope, element, attrs) {
+            element.bind("keydown keypress", function (event) {
+                if(event.which === 13) {
+                    scope.$apply(function (){
+                        scope.$eval(attrs.ngEnter);
+                    });
+
+                    event.preventDefault();
+                }
+            });
+        };
+    });
+
+</script>
+
+</body>
+</html>
