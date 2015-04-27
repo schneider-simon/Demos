@@ -71,7 +71,7 @@ include('view_helper.php');
                             <h3>Diodea</h3>
 
                             <div class="details">
-                                <a class="project-link"></a>
+                                <a href="creation_sub.php" class="project-link"></a>
                                 <ul>
                                     <li>Strategisches MArketing</li>
                                     <li>Logo Redesign</li>
@@ -90,7 +90,7 @@ include('view_helper.php');
                             <h3>Diodea</h3>
 
                             <div class="details">
-                                <a class="project-link"></a>
+                                                                <a href="creation_sub.php" class="project-link"></a> 
                                 <ul>
                                     <li>Strategisches MArketing</li>
                                     <li>Logo Redesign</li>

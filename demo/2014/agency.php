@@ -9,7 +9,7 @@ include('view_helper.php');
 </head>
 <body>
 <?php partial('navigation'); ?>
-<div class="page">
+<div class="page page-agency">
     <div class="anchor-navigation left-navigation">
         <ul class="list-inline list-unstyled inline-navigation">
             <li><a title="Die Agentur" href="#agency">Die Agentur</a></li>

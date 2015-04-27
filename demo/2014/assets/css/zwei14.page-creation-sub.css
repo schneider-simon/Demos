@@ -5,5 +5,29 @@ section.header .hero-image{
 }
 
 .page-creation-sub p{
+    text-align: center;
+    margin-bottom: 30px;
+}
 
+.page-creation-sub .content .row{
+    margin-bottom: 30px;
+}
+
+.page-creation-sub .content img{
+    margin-bottom: 10px;
+}
+
+.page-creation-sub ul li{
+    text-align: center;
+    line-height: 1.6;
+    font-size: 17px;
+    list-style-position: inside;
+}
+
+.page-creation-sub ul{
+    margin-bottom: 20px;
+}
+
+.page-creation-sub section.content{
+    margin-bottom: 20px;
 }
